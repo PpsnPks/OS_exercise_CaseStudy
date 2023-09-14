@@ -1,0 +1,15 @@
+D:\0000work\Year3\CaseStudyOS_2\bin\Debug\net7.0\CaseStudyOS_2.exe
+D:\0000work\Year3\CaseStudyOS_2\bin\Debug\net7.0\CaseStudyOS_2.deps.json
+D:\0000work\Year3\CaseStudyOS_2\bin\Debug\net7.0\CaseStudyOS_2.runtimeconfig.json
+D:\0000work\Year3\CaseStudyOS_2\bin\Debug\net7.0\CaseStudyOS_2.dll
+D:\0000work\Year3\CaseStudyOS_2\bin\Debug\net7.0\CaseStudyOS_2.pdb
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\CaseStudyOS_2.csproj.AssemblyReference.cache
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\CaseStudyOS_2.GeneratedMSBuildEditorConfig.editorconfig
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\CaseStudyOS_2.AssemblyInfoInputs.cache
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\CaseStudyOS_2.AssemblyInfo.cs
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\CaseStudyOS_2.csproj.CoreCompileInputs.cache
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\CaseStudyOS_2.dll
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\refint\CaseStudyOS_2.dll
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\CaseStudyOS_2.pdb
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\CaseStudyOS_2.genruntimeconfig.cache
+D:\0000work\Year3\CaseStudyOS_2\obj\Debug\net7.0\ref\CaseStudyOS_2.dll
