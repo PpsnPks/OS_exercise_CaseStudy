@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\0000work\\Year3\\CaseStudyOS_2\\CaseStudyOS_2.csproj": {}
+    "D:\\0000work\\Year3\\git_OS\\CaseStudyOS_2\\CaseStudyOS_2.csproj": {}
   },
   "projects": {
-    "D:\\0000work\\Year3\\CaseStudyOS_2\\CaseStudyOS_2.csproj": {
+    "D:\\0000work\\Year3\\git_OS\\CaseStudyOS_2\\CaseStudyOS_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\0000work\\Year3\\CaseStudyOS_2\\CaseStudyOS_2.csproj",
+        "projectUniqueName": "D:\\0000work\\Year3\\git_OS\\CaseStudyOS_2\\CaseStudyOS_2.csproj",
         "projectName": "CaseStudyOS_2",
-        "projectPath": "D:\\0000work\\Year3\\CaseStudyOS_2\\CaseStudyOS_2.csproj",
+        "projectPath": "D:\\0000work\\Year3\\git_OS\\CaseStudyOS_2\\CaseStudyOS_2.csproj",
         "packagesPath": "C:\\Users\\ppane\\.nuget\\packages\\",
-        "outputPath": "D:\\0000work\\Year3\\CaseStudyOS_2\\obj\\",
+        "outputPath": "D:\\0000work\\Year3\\git_OS\\CaseStudyOS_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ppane\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -9,9 +9,16 @@ namespace OS_Problem_02
         static int Front = 0;
         static int Back = 0;
         static int Count = 0;
+        static int Endflag = 0;
+        static int T1flag = 0;
+        static int T11flag = 0;
+
+        private static object _Lock = new object();
+
 
         static void EnQueue(int eq)
         {
+            while (Count == 10){}
             TSBuffer[Back] = eq;
             Back++;
             Back %= 10;
@@ -20,11 +27,14 @@ namespace OS_Problem_02
 
         static int DeQueue()
         {
+            while (Count == 0){}
             int x = 0;
             x = TSBuffer[Front];
             Front++;
             Front %= 10;
             Count -= 1;
+            if (T11flag == 1 && Count == 0)
+                Endflag = 1;
             return x;
         }
 
@@ -37,10 +47,12 @@ namespace OS_Problem_02
                 EnQueue(i);
                 Thread.Sleep(5);
             }
+            T1flag = 1;
         }
 
         static void th011()
         {
+            while (T1flag == 0){}
             int i;
 
             for (i = 100; i < 151; i++)
@@ -48,6 +60,7 @@ namespace OS_Problem_02
                 EnQueue(i);
                 Thread.Sleep(5);
             }
+            T11flag = 1;
         }
 
 
@@ -58,24 +71,32 @@ namespace OS_Problem_02
 
             for (i=0; i< 60; i++)
             {
-                j = DeQueue();
-                Console.WriteLine("j={0}, thread:{1}", j, t);
-                Thread.Sleep(100);
+                lock(_Lock)
+                {
+                    if(Endflag == 0)
+                    {
+                        j = DeQueue();
+                        Console.WriteLine("j={0}, thread:{1}", j, t);
+                        Thread.Sleep(100);
+                    }
+                    else
+                        break;
+                }
             }
         }
         static void Main(string[] args)
         {
             Thread t1 = new Thread(th01);
-            //Thread t11 = new Thread(th011);
+            Thread t11 = new Thread(th011);
             Thread t2 = new Thread(th02);
-            //Thread t21 = new Thread(th02);
-            //Thread t22 = new Thread(th02);
+            Thread t21 = new Thread(th02);
+            Thread t22 = new Thread(th02);
 
             t1.Start();
-            //t11.Start();
+            t11.Start();
             t2.Start(1);
-            //t21.Start(2);
-            //t22.Start(3);
+            t21.Start(2);
+            t22.Start(3);
         }
     }
 }
