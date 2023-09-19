@@ -14,15 +14,19 @@ namespace OS_Problem_02
         static int T11flag = 0;
 
         private static object _Lock = new object();
+        private static object _Lock2 = new object();
 
 
         static void EnQueue(int eq)
         {
-            while (Count == 10){}
-            TSBuffer[Back] = eq;
-            Back++;
-            Back %= 10;
-            Count += 1;
+            lock(_Lock2)
+            {
+                while (Count == 10){}
+                TSBuffer[Back] = eq;
+                Back++;
+                Back %= 10;
+                Count += 1;
+            }
         }
 
         static int DeQueue()
@@ -52,7 +56,6 @@ namespace OS_Problem_02
 
         static void th011()
         {
-            while (T1flag == 0){}
             int i;
 
             for (i = 100; i < 151; i++)
